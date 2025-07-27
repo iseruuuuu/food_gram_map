@@ -127,11 +127,11 @@
                     "stops": [
                         [
                             12,
-                            "hsla(240, 10%, 30%, 0.5)"
+                            "hsla(0, 0%, 100%, 0)"
                         ],
                         [
                             16,
-                            "hsla(240, 10%, 20%, 0.3)"
+                            "hsla(0, 0%, 100%, 0)"
                         ]
                     ]
                 }
@@ -2403,8 +2403,7 @@
             ],
             "layout": {
                 "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
+                "line-join": "round"
             },
             "paint": {
                 "line-color": "#fea",
@@ -2513,8 +2512,7 @@
             ],
             "layout": {
                 "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
+                "line-join": "round"
             },
             "paint": {
                 "line-color": "#ffd699",
@@ -2569,8 +2567,7 @@
             ],
             "layout": {
                 "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
+                "line-join": "round"
             },
             "paint": {
                 "line-color": "#ffb366",
@@ -2625,8 +2622,7 @@
             ],
             "layout": {
                 "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
+                "line-join": "round"
             },
             "paint": {
                 "line-color": "#ffb366",
@@ -2682,8 +2678,7 @@
             ],
             "layout": {
                 "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
+                "line-join": "round"
             },
             "paint": {
                 "line-color": "#ff8c42",
@@ -4162,9 +4157,9 @@
                 ]
             ],
             "layout": {
-                "icon-image": "{class}_11",
+                "icon-image": "",
                 "text-anchor": "top",
-                "text-field": "{name:latin}\n{name:nonlatin}",
+                "text-field": "{name:nonlatin}",
                 "text-font": [
                     "M PLUS Rounded 1c"
                 ],
@@ -4175,7 +4170,7 @@
                 ],
                 "text-padding": 2,
                 "text-size": 12,
-                "visibility": "none"
+                "visibility": "visible"
             },
             "paint": {
                 "text-color": "#666",
@@ -4234,9 +4229,9 @@
                 ]
             ],
             "layout": {
-                "icon-image": "{class}_11",
+                "icon-image": "",
                 "text-anchor": "top",
-                "text-field": "{name:latin}\n{name:nonlatin}",
+                "text-field": "{name:nonlatin}",
                 "text-font": [
                     "M PLUS Rounded 1c"
                 ],
@@ -4305,9 +4300,9 @@
                 ]
             ],
             "layout": {
-                "icon-image": "{class}_11",
+                "icon-image": "",
                 "text-anchor": "top",
-                "text-field": "{name:latin}\n{name:nonlatin}",
+                "text-field": "{name:nonlatin}",
                 "text-font": [
                     "M PLUS Rounded 1c"
                 ],
@@ -4354,9 +4349,9 @@
                 ]
             ],
             "layout": {
-                "icon-image": "{class}_11",
+                "icon-image": "",
                 "text-anchor": "top",
-                "text-field": "{name:latin}\n{name:nonlatin}",
+                "text-field": "{name:nonlatin}",
                 "text-font": [
                     "M PLUS Rounded 1c Bold"
                 ],
@@ -4405,25 +4400,20 @@
                 ]
             ],
             "layout": {
-                "icon-allow-overlap": false,
-                "icon-ignore-placement": false,
-                "icon-image": "{class}_11",
-                "icon-optional": false,
-                "text-allow-overlap": false,
+                "icon-image": "",
                 "text-anchor": "top",
-                "text-field": "{name:latin}\n{name:nonlatin}",
+                "text-field": "{name:nonlatin}",
                 "text-font": [
                     "M PLUS Rounded 1c"
                 ],
-                "text-ignore-placement": false,
                 "text-max-width": 9,
                 "text-offset": [
                     0,
                     0.6
                 ],
-                "text-optional": true,
                 "text-padding": 2,
-                "text-size": 12
+                "text-size": 12,
+                "visibility": "visible"
             },
             "paint": {
                 "text-color": "#666",
