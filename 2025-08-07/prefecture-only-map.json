@@ -235,7 +235,7 @@
                 "school"
             ],
             "paint": {
-                "fill-color": "#f0e8f8"
+                "fill-color": "hsla(49, 100%, 88%, 0.34)"
             }
         },
         {
@@ -301,7 +301,7 @@
                 "grass"
             ],
             "paint": {
-                "fill-color": "#d8e8c8",
+                "fill-color": "#c8d4b8",
                 "fill-opacity": 0.45
             }
         },
@@ -2466,7 +2466,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#c4b5fd",
+                "line-color": "#aaaaaa",
                 "line-opacity": 1,
                 "line-width": {
                     "base": 1.2,
@@ -2515,7 +2515,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#a78bfa",
+                "line-color": "#888888",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
@@ -2570,7 +2570,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#a78bfa",
+                "line-color": "#888888",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
@@ -2625,7 +2625,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#a78bfa",
+                "line-color": "#888888",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
@@ -2681,7 +2681,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#8b5cf6",
+                "line-color": "#666666",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
@@ -4992,7 +4992,7 @@
                         ]
                     ]
                 },
-                "visibility": "visible"
+                "visibility": "none"
             },
             "paint": {
                 "text-color": "#333",
@@ -5040,7 +5040,7 @@
                         ]
                     ]
                 },
-                "visibility": "visible"
+                "visibility": "none"
             },
             "paint": {
                 "text-color": "#333",
@@ -5095,7 +5095,7 @@
                         ]
                     ]
                 },
-                "visibility": "visible"
+                "visibility": "none"
             },
             "paint": {
                 "text-color": "#333",
