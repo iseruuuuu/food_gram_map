@@ -1,0 +1,395 @@
+{
+    "version": 8,
+    "name": "Prefecture Only Map",
+    "metadata": {
+        "mapbox:autocomposite": false,
+        "mapbox:groups": {
+            "1444849242106.713": {
+                "collapsed": false,
+                "name": "Places"
+            },
+            "1444849334699.1902": {
+                "collapsed": true,
+                "name": "Bridges"
+            },
+            "1444849345966.4436": {
+                "collapsed": true,
+                "name": "Roads"
+            },
+            "1444849354174.1904": {
+                "collapsed": true,
+                "name": "Tunnels"
+            },
+            "1444849364238.8171": {
+                "collapsed": true,
+                "name": "Buildings"
+            },
+            "1444849382550.77": {
+                "collapsed": false,
+                "name": "Water"
+            },
+            "1444849388993.3071": {
+                "collapsed": false,
+                "name": "Land"
+            }
+        },
+        "mapbox:type": "template",
+        "openmaptiles:mapbox:owner": "openmaptiles",
+        "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t",
+        "openmaptiles:version": "3.x",
+        "maputnik:renderer": "mbgljs"
+    },
+    "center": [
+        138.2529,
+        36.2048
+    ],
+    "zoom": 5,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {
+        "openmaptiles": {
+            "type": "vector",
+            "url": "https://tile.openstreetmap.jp/data/planet.json"
+        },
+        "takeshima": {
+            "type": "vector",
+            "url": "https://tile.openstreetmap.jp/data/takeshima.json"
+        },
+        "hoppo": {
+            "type": "vector",
+            "url": "https://tile.openstreetmap.jp/data/hoppo.json"
+        }
+    },
+    "sprite": "https://tile.openstreetmap.jp/styles/osm-bright/sprite",
+    "glyphs": "https://tile.openstreetmap.jp/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "#ffffff"
+            }
+        },
+        {
+            "id": "landcover-glacier",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "glacier"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#fff",
+                "fill-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.9
+                        ],
+                        [
+                            10,
+                            0.3
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "landcover-sand",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "sand"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#f4e8c1"
+            }
+        },
+        {
+            "id": "landcover-wood",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "wood"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#e8f5e8",
+                "fill-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.3
+                        ],
+                        [
+                            10,
+                            0.1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "landcover-wetland",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "wetland"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#c8facc"
+            }
+        },
+        {
+            "id": "landcover-ice",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "ice"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#fff"
+            }
+        },
+        {
+            "id": "landcover-crop",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "crop"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#f8f4f0"
+            }
+        },
+        {
+            "id": "landcover-grass",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
+            },
+            "source": "openmaptiles",
+            "source-layer": "landcover",
+            "filter": [
+                "==",
+                "subclass",
+                "grass"
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#f0f8f0"
+            }
+        },
+        {
+            "id": "water",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849382550.77"
+            },
+            "source": "openmaptiles",
+            "source-layer": "water",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "intermittent",
+                    1
+                ]
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#e6f3f8"
+            }
+        },
+        {
+            "id": "water-intermittent",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1444849382550.77"
+            },
+            "source": "openmaptiles",
+            "source-layer": "water",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "==",
+                    "intermittent",
+                    1
+                ]
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#aad3df",
+                "fill-opacity": 0.4
+            }
+        },
+        {
+            "id": "boundary-prefecture-only",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "boundary",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "admin_level",
+                    4
+                ],
+                [
+                    "!=",
+                    "maritime",
+                    1
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#1a1a1a",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            0,
+                            2
+                        ],
+                        [
+                            4,
+                            4
+                        ],
+                        [
+                            8,
+                            8
+                        ],
+                        [
+                            12,
+                            12
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "place-label-prefecture",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "place",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "class",
+                    "city"
+                ],
+                [
+                    "==",
+                    "admin_level",
+                    4
+                ]
+            ],
+            "layout": {
+                "text-field": "{name:latin} {name:nonlatin}",
+                "text-font": [
+                    "M PLUS Rounded 1c"
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            4,
+                            12
+                        ],
+                        [
+                            8,
+                            18
+                        ],
+                        [
+                            12,
+                            24
+                        ]
+                    ]
+                },
+                "text-transform": "uppercase",
+                "text-letter-spacing": 0.2,
+                "text-max-width": 8,
+                "text-font-weight": "bold"
+            },
+            "paint": {
+                "text-color": "#000000",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 2
+            }
+        }
+    ]
+}
